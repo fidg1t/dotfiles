@@ -11,6 +11,7 @@ $git_branch\
 $git_status\
 [](fg:sapphire bg:blue)\
 $c\
+$custom\
 $rust\
 $golang\
 $nodejs\
@@ -69,7 +70,7 @@ disabled = false
 style = "bg:surface0 fg:text"
 
 [os.symbols]
-
+Windows = ""
 Ubuntu = "󰕈"
 SUSE = ""
 Raspbian = "󰐿"
@@ -126,6 +127,12 @@ format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
 symbol = " "
 style = "bg:teal"
 format = '[[ $symbol( $version) ](fg:base bg:blue)]($style)'
+
+[custom.cpp]
+detect_extensions = ['cpp', 'hpp']
+symbol = " "
+style = "bg:teal"
+format = '[[ $symbol](fg:base bg:blue)]($style)'
 
 [rust]
 symbol = ""
